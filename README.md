@@ -37,3 +37,20 @@ I could say that an important point of this is that it allows us to create conta
 | departure_date_at | date       |
 | created_at        | timestamps |
 | updated_at        | timestamps |
+
+## Entity Files
+
+| Entity    | Files                                              |
+| --------- | -------------------------------------------------- |
+| Passenger | Model - Controller - Migration - Factorie - Seeder |
+| Ticket    | Model - Controller - Migration - Factorie - Seeder |
+
+## API Route list
+
+| Method | URI                 | Action | Middleware |
+| ------ | ------------------- | ------ | ---------- |
+| GET    | api/passengers      | index  | api        |
+| GET    | api/passengers/{id} | show   | api        |
+| GET    | api/tickets         | index  | api        |
+| GET    | api/tickets/{id}    | show   | api        |
+

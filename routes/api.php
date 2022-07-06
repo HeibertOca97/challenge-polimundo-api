@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    //return $request->user();
+//});
+
+Route::get('/passengers', [\App\Http\Controllers\PassengerController::class, 'index']);
+Route::get('/passengers/{id}', [\App\Http\Controllers\PassengerController::class, 'show']);
+
+Route::get('/tickets', [\App\Http\Controllers\TicketController::class, 'index']);
+Route::get('/tickets/{id}', [\App\Http\Controllers\TicketController::class, 'show']);
