@@ -40,10 +40,10 @@ I could say that an important point of this is that it allows us to create conta
 
 ## Entity Files
 
-| Entity    | Files                                              |
-| --------- | -------------------------------------------------- |
-| Passenger | Model - Controller - Migration - Factorie - Seeder |
-| Ticket    | Model - Controller - Migration - Factorie - Seeder |
+| Entity    | Files                                                     |
+| --------- | --------------------------------------------------------- |
+| Passenger | Model - Controller - Migration - Factorie - Seeder - Test |
+| Ticket    | Model - Controller - Migration - Factorie - Seeder - Test |
 
 ## API Route list
 
@@ -53,4 +53,13 @@ I could say that an important point of this is that it allows us to create conta
 | GET    | api/passengers/{id} | show   | api        |
 | GET    | api/tickets         | index  | api        |
 | GET    | api/tickets/{id}    | show   | api        |
+
+## Testing
+
+Write the following line of code to run the tests.
+
+`php artisan test --testsuite=Feature`
+
+![](https://res.cloudinary.com/heibertoca97/image/upload/v1657153496/testing/testing_beor8h.png)
+
 
